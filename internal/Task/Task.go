@@ -18,7 +18,7 @@ type Task struct {
 	Status      Status    `json:"Status"`
 	CreatedAt   time.Time `json:"CreatedAt"`
 	UpdatedAt   time.Time `json:"UpdatedAt"`
-	ComplitedAt time.Time `json:"ComplitedAt,omitempty"`
+	CompletedAt time.Time `json:"ComplitedAt,omitempty"`
 }
 
 func NewTask(description string) *Task {
@@ -47,6 +47,6 @@ func (t *Task) SetStatusComplited() error {
 
 	t.Status = StatusCompleted
 	t.UpdatedAt = time.Now()
-	t.ComplitedAt = time.Now()
+	t.CompletedAt = time.Now()
 	return nil
 }
