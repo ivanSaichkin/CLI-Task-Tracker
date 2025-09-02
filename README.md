@@ -26,7 +26,7 @@ go build -o TaskTracker cmd/main.go
 ## 🏗️ Project Architecture
 
 ```
-gotracker/
+CLI-Task-Tracker/
 ├── cmd/
 │   └── main.go         # Entry point
 ├── internal/
