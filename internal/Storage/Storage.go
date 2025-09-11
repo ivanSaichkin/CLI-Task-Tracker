@@ -124,7 +124,7 @@ func (s *JSONStorage) GetComplitedTasks() ([]task.Task, error) {
 	complitedTasks := make([]task.Task, 0)
 
 	for _, task := range s.Tasks {
-		if task.Status == "complited" {
+		if task.Status == "completed" {
 			complitedTasks = append(complitedTasks, task)
 		}
 	}
